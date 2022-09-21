@@ -15,8 +15,8 @@ public static class InfraConfigModule
                .AddRepositories();
 
     private static IServiceCollection AddContext(this IServiceCollection services, IConfiguration configuration) =>
-        services.AddDbContext<RoomsContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")))
-                .AddScoped<RoomsContext>();
+        //services.AddDbContext<RoomsContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+        services.AddDbContext<RoomsContext>(options => options.UseInMemoryDatabase("bookings"));
 
     private static IServiceCollection AddRepositories(this IServiceCollection services) =>
         services.AddScoped<IUnitOfWork, UnitOfWork>()
@@ -31,8 +31,10 @@ public static class InfraConfigModule
             var context = serviceScope.ServiceProvider.GetService<RoomsContext>();
             ArgumentNullException.ThrowIfNull(context);
 
+            if (context.Database.ProviderName.Contains("InMemory"))
+                return app;
+            
             var pendingMigrations = context.Database.GetPendingMigrations();
-
             context.Database.Migrate();
         }
         catch

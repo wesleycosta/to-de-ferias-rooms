@@ -24,4 +24,3 @@ public sealed class RoomMapping : IEntityTypeConfiguration<Room>
         builder.ToTable("Rooms");
     }
 }
-
