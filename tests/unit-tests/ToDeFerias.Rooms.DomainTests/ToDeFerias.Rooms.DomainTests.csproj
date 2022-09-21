@@ -24,8 +24,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\src\ToDeFerias.Rooms.Domain\ToDeFerias.Rooms.Domain.csproj" />
-  </ItemGroup>
-
 </Project>
