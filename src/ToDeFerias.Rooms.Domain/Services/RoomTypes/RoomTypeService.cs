@@ -1,7 +1,7 @@
 ﻿using ToDeFerias.Rooms.Domain.Entities;
 using ToDeFerias.Rooms.Domain.Interfaces.Services;
 
-namespace ToDeFerias.Rooms.Domain.Services;
+namespace ToDeFerias.Rooms.Domain.Services.RoomTypes;
 
 public sealed class RoomTypeService : IRoomTypeService
 {

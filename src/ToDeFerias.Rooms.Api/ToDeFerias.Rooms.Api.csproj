@@ -8,10 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="11.0.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ToDeFerias.Core.Notifier\ToDeFerias.Core.Notifier.csproj" />
     <ProjectReference Include="..\ToDeFerias.Rooms.Domain\ToDeFerias.Rooms.Domain.csproj" />
     <ProjectReference Include="..\ToDeFerias.Rooms.Infrastructure\ToDeFerias.Rooms.Infrastructure.csproj" />
   </ItemGroup>

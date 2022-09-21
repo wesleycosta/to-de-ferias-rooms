@@ -8,10 +8,8 @@
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.2.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\ToDeFerias.Core.Notifier\ToDeFerias.Core.Notifier.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
   </ItemGroup>
 
 </Project>
