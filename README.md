@@ -2,7 +2,6 @@
 Microsserviço responsável pelo gerenciamento de quartos e categorias.
 
 [![CodeFactor](https://www.codefactor.io/repository/github/wesleycosta/to-de-ferias-bookings/badge)](https://www.codefactor.io/repository/github/wesleycosta/to-de-ferias-rooms)
-
 [![Build status](https://wlcosta.visualstudio.com/to-de-ferias/_apis/build/status/to-de-ferias-rooms-ci)](https://wlcosta.visualstudio.com/to-de-ferias/_build/latest?definitionId=8)
 
 ## Arquitetura
